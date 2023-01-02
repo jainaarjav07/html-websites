@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
+  background:linear-gradient(to right,rgb(255,1,255),rgb(16, 194, 243));;
+}
+
+ul{
+  position: relative;
+  display: flex;
+  flex-direction:row;
+  gap: 30px;
+}
+
+
+ul li{
+  position: relative;
+list-style: none;
+}
+
+ul li a{
+font-size: 2em;
+text-decoration: none;
+line-height:1em;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: transparent;
+-webkit-text-stroke: 1px
+rgba(255,255,255,0.5);
+}
+
+ul li a::before{
+content: attr(data-text);
+position: absolute;
+color: var(--clr);
+width:0;
+overflow: hidden;
+transition: 1s;
+border-right: 8px solid var(--clr);
+-webkit-text-stroke: 1px var(--clr);
+}
+ul li a:hover::before{ 
+width: 100%;
+filter: drop-shadow(0 0 15px var(--clr));
+}
+
+.logo img{
+    width: 400;
+    margin: 0px;
+}
+
+/* .nav-links ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    text-decoration:black;
+    fill: black;
+
+}
+.nav-links{
+    text-align: center;
+    flex:1;
+    border:0 20px solid #1d1d;
+    text-decoration:black ;
+    fill: black;
+}
+.nav-links ul li a{
+    border-radius: 20px;
+    fill: black;
+    display: block;
+    width: 80px;
+    height: 20px;
+    margin: 0 10px;
+    border: 3px solid #1d1d1d;
+    z-index: 1;
+    text-decoration-color: black;
+    text-shadow:0px 0px #1d1d1d;
+    font-size: large;
+} */
+
+div.logo {
+    background-color: transparent;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.logo img {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  div.logo img:hover {
+    background-color: #f64933;
+  }
+
+  /* .data{
+    padding:10px 45%;
+    margin: 10 30px;
+    border: solid;
+  } */

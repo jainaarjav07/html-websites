@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+      body {
+        background-image:linear-gradient(rgba(0,0, 0, 0.75),rgba(0,0,0, 0.75)),url("pics/bg2.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+      }
+      .login-box {
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 35%;
+        width: 400px;
+        padding: 40px;
+        background: #242826;
+        box-shadow: 15px 25px rgba(165, 70, 70, 0.7);
+        border-radius: 10px;
+      }
+      .login-box h1 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+      }
+      .login-box .user-box input {
+        position: relative;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+      }
+      
+      #submit {
+        padding: 10px 20px;
+        color: #cbbddb;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin: auto;
+        overflow: hidden;
+        transition: 0.5s;
+        border: 1px solid #dd5e5e;
+      }
+      #submit:hover {
+        color: #fff;
+        background: #dc6b6b;
+        border-radius: 5px;
+        box-shadow: 0 5px #ec7c7c, 0 0 25px #ec7c7c, 0 0 50px #ec7c7c,
+          0 0 100px #ec7c7c;
+      }
+      .button-form {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+      }
+      #register {
+        font-size: 14px;
+        text-decoration: none;
+        text-align: center;
+        color: #d59a9a;
+        margin: 20px;
+      }
+      #register a {
+        margin: auto;
+        color: #e85555;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-box"><h1>Login</h1>
+      <form action="/action_page.php">
+        <div class="user-box"><input type="text" name="" required="" placeholder="Username"/> </div>
+        <div class="user-box"><input type="password" name="" required="" placeholder="Password" /> </div>
+        <div class="button-form"><a id="submit" href="04_movie booking.html">Submit</a></div>
+        <div id="register">Don't have an account? <a href="" id="abc"> Register</a></div>
+      </form>
+    </div>
+  </body>
+</html>
